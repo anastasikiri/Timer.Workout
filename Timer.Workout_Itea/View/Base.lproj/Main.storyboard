@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="T3b-W1-LQm">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Workout View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="WorkoutViewController" customModule="Timer_Workout_Itea" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="djT-0u-EAz">
+                                <rect key="frame" x="0.0" y="283" width="390" height="527"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="ExercisesTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ExercisesTableViewCell" id="eac-GB-vGU" customClass="ExercisesTableViewCell" customModule="Timer_Workout_Itea" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="42.333332061767578"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eac-GB-vGU" id="vHF-HV-Jrc">
+                                            <rect key="frame" x="0.0" y="0.0" width="390" height="42.333332061767578"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Exercise" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="cOw-TY-J5f">
+                                                    <rect key="frame" x="20" y="6.9999999999999982" width="113" height="28.333333333333329"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="113" id="FDa-VO-CaV"/>
+                                                        <constraint firstAttribute="height" constant="28" id="qCv-iw-fTO"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                                    <color key="textColor" red="0.78039215689999997" green="1" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vew-7R-N9w">
+                                                    <rect key="frame" x="141" y="6.9999999999999982" width="119" height="28.333333333333329"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="28" id="0iS-l3-Qvy"/>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="119" id="NMH-gq-X46"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                                    <color key="textColor" red="0.78039215689999997" green="1" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rest Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JJz-df-dtv">
+                                                    <rect key="frame" x="283" y="6.9999999999999982" width="103" height="28.333333333333329"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="103" id="2YA-VW-4Nj"/>
+                                                        <constraint firstAttribute="height" constant="28" id="qra-Ac-AbK"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                                    <color key="textColor" red="0.78039215689999997" green="1" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="JJz-df-dtv" firstAttribute="top" secondItem="vHF-HV-Jrc" secondAttribute="top" constant="7" id="1Rb-9Q-TuI"/>
+                                                <constraint firstItem="Vew-7R-N9w" firstAttribute="top" secondItem="vHF-HV-Jrc" secondAttribute="top" constant="7" id="5mC-xZ-Lkl"/>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JJz-df-dtv" secondAttribute="trailing" constant="3" id="5uG-Ue-grl"/>
+                                                <constraint firstItem="cOw-TY-J5f" firstAttribute="top" secondItem="vHF-HV-Jrc" secondAttribute="top" constant="7" id="GCc-Pm-wXt"/>
+                                                <constraint firstItem="cOw-TY-J5f" firstAttribute="leading" secondItem="vHF-HV-Jrc" secondAttribute="leading" constant="20" id="JB3-gq-eGD"/>
+                                                <constraint firstAttribute="bottom" secondItem="cOw-TY-J5f" secondAttribute="bottom" constant="7" id="OTp-Mp-1vY"/>
+                                                <constraint firstItem="Vew-7R-N9w" firstAttribute="leading" secondItem="cOw-TY-J5f" secondAttribute="trailing" constant="8" id="P15-8r-CYK"/>
+                                                <constraint firstItem="JJz-df-dtv" firstAttribute="leading" secondItem="Vew-7R-N9w" secondAttribute="trailing" constant="23" id="Vr8-Jp-ORS"/>
+                                                <constraint firstAttribute="bottom" secondItem="JJz-df-dtv" secondAttribute="bottom" constant="7" id="cvg-az-Y13"/>
+                                                <constraint firstAttribute="bottom" secondItem="Vew-7R-N9w" secondAttribute="bottom" constant="7" id="oS4-xY-QiJ"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="exerciseCellLabel" destination="cOw-TY-J5f" id="hg5-jR-FcN"/>
+                                            <outlet property="timeOfExerciseCellLabel" destination="Vew-7R-N9w" id="wzE-nn-WQi"/>
+                                            <outlet property="timeOfRestCellLabel" destination="JJz-df-dtv" id="0Fn-UH-rhh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Workout" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ITD-eG-reR">
+                                <rect key="frame" x="0.0" y="88" width="390" height="55"/>
+                                <color key="backgroundColor" red="0.78039215689999997" green="1" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="45"/>
+                                <color key="textColor" red="0.22352941179999999" green="0.031372549020000001" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EmI-N2-0XQ">
+                                <rect key="frame" x="30" y="173" width="160" height="44.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="mzw-gD-Ftt"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.22352941179999999" green="0.031372549020000001" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" title="Start">
+                                    <backgroundConfiguration key="background" cornerRadius="15">
+                                        <color key="backgroundColor" red="0.78039215689999997" green="1" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Verdana-Bold" family="Verdana" pointSize="25"/>
+                                    <color key="baseForegroundColor" red="0.22352941179999999" green="0.031372549020000001" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Azf-7a-MOe"/>
+                                    <segue destination="3kS-ik-NBu" kind="show" id="ty0-19-FXR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0jg-re-pEO">
+                                <rect key="frame" x="200" y="173" width="160" height="44.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="160" id="ezf-If-NkT"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Add more">
+                                    <color key="titleColor" red="0.22352941179999999" green="0.031372549020000001" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" title="Add more">
+                                    <backgroundConfiguration key="background" cornerRadius="15">
+                                        <color key="backgroundColor" red="0.78039215689999997" green="1" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Verdana-Bold" family="Verdana" pointSize="25"/>
+                                    <color key="baseForegroundColor" red="0.22352941179999999" green="0.031372549020000001" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addMoreButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kua-ab-q4N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wih-F9-6xW">
+                                <rect key="frame" x="30" y="173" width="330" height="44.666666666666657"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="330" id="D11-jJ-ddG"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Create New Set">
+                                    <color key="titleColor" red="0.22352941179999999" green="0.031372549020000001" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                </state>
+                                <buttonConfiguration key="configuration" style="plain" title="Create New Set">
+                                    <backgroundConfiguration key="background" cornerRadius="15">
+                                        <color key="backgroundColor" red="0.78039215689999997" green="1" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Verdana-Bold" family="Verdana" pointSize="25"/>
+                                    <color key="baseForegroundColor" red="0.22352941179999999" green="0.031372549020000001" blue="0.47450980390000003" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="createNewSetButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RSn-U5-SPa"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="    Exercise         Workout Time       Rest Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vfw-2y-VJO">
+                                <rect key="frame" x="0.0" y="243" width="390" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="78G-JQ-vd8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="15"/>
+                                <color key="textColor" red="0.7803921568627451" green="1" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.22352941176470587" green="0.031372549019607843" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="djT-0u-EAz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0vI-g1-Y6i"/>
+                            <constraint firstItem="ITD-eG-reR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1zW-z2-Hnb"/>
+                            <constraint firstItem="0jg-re-pEO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EmI-N2-0XQ" secondAttribute="trailing" constant="9" id="6IO-Dz-kXa"/>
+                            <constraint firstItem="Wih-F9-6xW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7UG-uO-We0"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="djT-0u-EAz" secondAttribute="bottom" id="86V-WW-SIx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0jg-re-pEO" secondAttribute="trailing" constant="30" id="AiM-Xl-85d"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="djT-0u-EAz" secondAttribute="trailing" id="BuZ-nj-mIx"/>
+                            <constraint firstItem="EmI-N2-0XQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Dgm-3k-unk"/>
+                            <constraint firstItem="djT-0u-EAz" firstAttribute="top" secondItem="Vfw-2y-VJO" secondAttribute="bottom" id="Lci-Cc-37c"/>
+                            <constraint firstItem="Vfw-2y-VJO" firstAttribute="top" secondItem="ITD-eG-reR" secondAttribute="bottom" constant="100" id="UAN-YK-WJp"/>
+                            <constraint firstItem="EmI-N2-0XQ" firstAttribute="top" secondItem="ITD-eG-reR" secondAttribute="bottom" constant="30" id="hZN-XO-RdV"/>
+                            <constraint firstItem="0jg-re-pEO" firstAttribute="top" secondItem="ITD-eG-reR" secondAttribute="bottom" constant="30" id="jxa-Dh-R0q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vfw-2y-VJO" secondAttribute="trailing" id="k0r-f5-VUF"/>
+                            <constraint firstItem="ITD-eG-reR" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="oJQ-Ld-wRj"/>
+                            <constraint firstItem="Vfw-2y-VJO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="oVL-xu-87B"/>
+                            <constraint firstItem="ITD-eG-reR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pDu-BY-zJa"/>
+                            <constraint firstItem="Wih-F9-6xW" firstAttribute="top" secondItem="ITD-eG-reR" secondAttribute="bottom" constant="30" id="u1M-jm-9l1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="JCJ-Rp-ow3"/>
+                    <connections>
+                        <outlet property="addMoreButton" destination="0jg-re-pEO" id="6Ph-Zs-tgJ"/>
+                        <outlet property="createSetButton" destination="Wih-F9-6xW" id="feS-pe-3JS"/>
+                        <outlet property="exerciseTableView" destination="djT-0u-EAz" id="tvH-rv-hwc"/>
+                        <outlet property="startButton" destination="EmI-N2-0XQ" id="Xji-4T-YdU"/>
+                        <outlet property="tableViewNameLabel" destination="Vfw-2y-VJO" id="9PY-S9-DtV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="860" y="109.47867298578198"/>
+        </scene>
+        <!--Start View Controller-->
+        <scene sceneID="JdJ-zf-Nvh">
+            <objects>
+                <viewController storyboardIdentifier="TimerViewController" id="3kS-ik-NBu" customClass="StartViewController" customModule="Timer_Workout_Itea" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O3z-cM-ChK">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Set #" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pGv-Q3-vCh">
+                                <rect key="frame" x="0.0" y="88" width="390" height="55"/>
+                                <color key="backgroundColor" red="0.7803921568627451" green="1" blue="0.13725490196078433" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="45"/>
+                                <color key="textColor" red="0.22352941176470587" green="0.031372549019607843" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="T" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x0v-r1-fC9">
+                                <rect key="frame" x="100" y="263" width="190" height="97.666666666666686"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="80"/>
+                                <color key="textColor" red="0.7803921568627451" green="1" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LMX-G4-NPV"/>
+                        <color key="backgroundColor" red="0.22352941176470587" green="0.031372549019607843" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="pGv-Q3-vCh" firstAttribute="top" secondItem="LMX-G4-NPV" secondAttribute="top" id="8ad-KW-xmc"/>
+                            <constraint firstItem="pGv-Q3-vCh" firstAttribute="trailing" secondItem="LMX-G4-NPV" secondAttribute="trailing" id="MkO-cP-I3H"/>
+                            <constraint firstItem="LMX-G4-NPV" firstAttribute="trailing" secondItem="x0v-r1-fC9" secondAttribute="trailing" constant="100" id="VGH-Pu-abM"/>
+                            <constraint firstItem="x0v-r1-fC9" firstAttribute="top" secondItem="pGv-Q3-vCh" secondAttribute="bottom" constant="120" id="dgV-Kv-Dzb"/>
+                            <constraint firstItem="pGv-Q3-vCh" firstAttribute="leading" secondItem="LMX-G4-NPV" secondAttribute="leading" id="nFD-Jx-jcT"/>
+                            <constraint firstItem="x0v-r1-fC9" firstAttribute="leading" secondItem="LMX-G4-NPV" secondAttribute="leading" constant="100" id="sd7-T8-s6a"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="UB2-ga-I1M"/>
+                    <connections>
+                        <outlet property="exerciseNameLabel" destination="pGv-Q3-vCh" id="VH1-1Z-VIU"/>
+                        <outlet property="timerLabel" destination="x0v-r1-fC9" id="xzh-an-t5I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HcI-if-XYW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1560" y="109.47867298578198"/>
+        </scene>
+        <!--Finish View Controller-->
+        <scene sceneID="AiZ-FQ-pk9">
+            <objects>
+                <viewController storyboardIdentifier="FinishViewController" id="DTQ-Ma-Yvg" customClass="FinishViewController" customModule="Timer_Workout_Itea" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mGK-Yh-i91">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You Did It! " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cpW-w4-vBK">
+                                <rect key="frame" x="30" y="144" width="330" height="55"/>
+                                <fontDescription key="fontDescription" name="Verdana-Bold" family="Verdana" pointSize="45"/>
+                                <color key="textColor" red="0.78039215689999997" green="1" blue="0.13725490200000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="R1o-oH-awT"/>
+                        <color key="backgroundColor" red="0.22352941176470587" green="0.031372549019607843" blue="0.47450980392156861" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="R1o-oH-awT" firstAttribute="trailing" secondItem="cpW-w4-vBK" secondAttribute="trailing" constant="30" id="Hko-sF-MYQ"/>
+                            <constraint firstItem="cpW-w4-vBK" firstAttribute="leading" secondItem="R1o-oH-awT" secondAttribute="leading" constant="30" id="JIa-y0-lAd"/>
+                            <constraint firstItem="cpW-w4-vBK" firstAttribute="top" secondItem="R1o-oH-awT" secondAttribute="top" constant="100" id="YWk-hx-e2w"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w8p-cO-qMG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2272" y="110"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ehJ-Sd-BBS">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T3b-W1-LQm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="cqs-5M-kQU">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.64705882349999999" green="0.89019607840000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.64705882349999999" green="0.89019607840000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="65H-3B-2NI"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GMW-jw-8FV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" red="0.64705882349999999" green="0.89019607840000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>
